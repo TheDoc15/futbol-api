@@ -1,0 +1,358 @@
+{
+	"info": {
+		"_postman_id": "f0daffda-5982-4ed3-aa0e-331c62e1dc9f",
+		"name": "API Futbol-request",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38290642"
+	},
+	"item": [
+		{
+			"name": "Crear jugadores",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Juan P\\u00e9rez\",\n  \"posicion\": \"Delantero\",\n  \"edad\": 25,\n  \"equipoId\": 1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/jugadores",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"jugadores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener todos los jugadores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/jugadores",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"jugadores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener jugadores por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/jugadores/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"jugadores",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar jugadores",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"posicion\": \"Extremo derecho\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/jugadores/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"jugadores",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar jugadores",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/jugadores/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"jugadores",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear torneos",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Liga Colombiana\",\n  \"pais\": \"Colombia\",\n  \"anio\": 2024\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/torneos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"torneos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener todos los torneos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/torneos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"torneos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener torneos por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/torneos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"torneos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar torneos",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"anio\": 2025\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/torneos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"torneos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar torneos",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/torneos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"torneos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear partidos",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"fecha\": \"2024-09-15\",\n  \"resultado\": \"2-1\",\n  \"localId\": 1,\n  \"visitanteId\": 2,\n  \"torneoId\": 1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/partidos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"partidos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener todos los partidos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/partidos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"partidos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener partidos por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/partidos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"partidos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar partidos",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"resultado\": \"3-1\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/partidos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"partidos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar partidos",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/partidos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"partidos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
